@@ -1,0 +1,82 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+.heading {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.heading__blue {
+    text-transform: uppercase;
+    color: rgb(36, 173, 214);
+    position: relative;
+    font-size: 1.3rem;
+}
+
+.heading__blue::after {
+    content:'';
+    position:absolute;
+    width:180px;
+    height:3px;
+    background:rgb(36, 173, 214);
+    bottom:-10px;
+    left:0;
+    right:0;
+    margin:auto;
+}
+
+.section__text {
+    font-size: 1rem;
+    font-weight: 200;
+    padding: 0px 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+@media(min-width: 992px){
+    .px-custom {
+        padding: 0 152px;
+    }
+}
+
+.list-title {
+    font-size: 1.3rem;
+    color: rgb(36, 173, 214);
+    text-transform: uppercase;
+}
+
+.list-custom{
+    background-color: transparent!important;
+    text-align: left;
+    border-radius: 0px;
+}
+
+.list-custom a{
+    background-color: transparent!important;
+    border: none;
+    border-bottom: 1px solid rgb(158, 158, 158);
+    transition: .3s all;
+    padding: 5px;
+}
+
+.list-custom a:hover {
+    border-bottom: 1px solid black;
+}
+
+.list-group-item:last-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.album-img img{
+    width: 100%!important;
+}
